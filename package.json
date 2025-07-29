@@ -1,0 +1,22 @@
+{
+  "name": "pandit-ji-booking-app",
+  "version": "1.0.0",
+  "description": "Full-stack MERN application for booking Pandit services and holy items shopping",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["mern", "booking", "pandit", "authentication", "react", "node", "mongodb"],
+  "author": "Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
